@@ -19,19 +19,17 @@ public class Temperature {
 
             boolean duplicateDay = false;
 
-            for (j = 0; j < i; j++) {
-          if (weekday.equalsIgnoreCase(dayOfWeek[j])) {
+            for (int j = 0; j < i; j++) {
+              if (weekday.equalsIgnoreCase(dayOfWeek[j])) {
              duplicateDay = true;
-          }
-        }
+            }
+            }
 
-          if (duplicateDay) {
-           System.out.println("That weekday has already been entered.");
-            i--;
-          continue;
-        }
-
-
+            if (duplicateDay) {
+             System.out.println("That weekday has already been entered.");
+             i--;
+             continue;
+            }
             // Validate weekday
             if (weekday.equalsIgnoreCase("Monday") ||
                 weekday.equalsIgnoreCase("Tuesday") ||
