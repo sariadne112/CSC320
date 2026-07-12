@@ -19,7 +19,7 @@ public class Temperature {
 
             boolean duplicateDay = false;
 
-            for (int j = 0; j < i; j++) {
+            for (j = 0; j < i; j++) {
               if (weekday.equalsIgnoreCase(dayOfWeek[j])) {
              duplicateDay = true;
             }
